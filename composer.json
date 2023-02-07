@@ -10,7 +10,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Barryvdh\\Debugbar\\Tests\\": "tests"
+      "Miqo\\LaravelModelsCamelCase\\Tests\\": "tests"
     }
   },
   "authors": [
