@@ -1,0 +1,33 @@
+{
+  "name": "miqo/laravel-models-camel-case",
+  "description": "Simply camelCase Laravel Model attributes and relationships",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Miqo\\LaravelModelsCamelCase\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Barryvdh\\Debugbar\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Miqo",
+      "email": "miqosrapionyan@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "ext-mbstring": "*",
+    "ext-ctype": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "10"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}

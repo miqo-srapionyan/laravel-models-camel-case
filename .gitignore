@@ -1,0 +1,15 @@
+# File system cruft
+.DS_Store
+
+# Individual per developer
+.idea
+.vscode
+phpunit.xml
+
+# Generated files
+.phpunit.result.cache
+
+# composer
+composer.phar
+composer.lock
+vendor
