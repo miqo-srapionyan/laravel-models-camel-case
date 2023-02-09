@@ -39,6 +39,30 @@ $user = User::find(1);
 // instead of $user->first_name, $user->last_name
 echo $user->firstName.' '.$user->lastName; // John Doe
 ```
+And you can still use the old way as well, as mixed it
+```injectablephp
+// When saving
+$user = new User();
+$user->first_name = 'John';
+$user->last_name = 'Doe';
+$user->save();
 
+// When creating
+$user = new User([
+    'first_name' => 'John',
+    'last_name'  => 'Doe', 
+]);
+$user->save();
+
+// When getting
+$user = User::find(1);
+echo $user->first_name.' '.$user->last_name; // John Doe
+
+// Mixed
+$user = new User();
+$user->firstName = 'John';
+$user->last_name = 'Doe';
+$user->save();
+```
 
 
